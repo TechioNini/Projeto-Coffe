@@ -33,7 +33,12 @@ app.get("/Login", function(req, res){
     res.send("Pagina Login");
 });
 
+app.get("/Cadastro", function(req, res){
+    res.send("Pagina Cadastro");
+});
 
-
+app.get("/CardRegistration", function(req, res){
+    res.send("Pagina checout");
+});
 // todos os cod acima desta linha Localhost:8080
 app.listen(8080);
