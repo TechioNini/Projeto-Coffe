@@ -1,5 +1,7 @@
-// não esquecer de alterar para NOT NULL
+// não esquecer de alterar para NOT NULL ok
 // adicionar idade no cadastro ou data de nascimento ?
+// adicionar uma primary key. 
+// adicionar id de usuario auto increment depois de cada registro 
 
 
 // cadastro dos usuarios

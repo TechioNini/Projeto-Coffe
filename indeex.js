@@ -1,3 +1,10 @@
+const Sequelize = require("sequelize");
+const sequelize =new Sequelize("sistemadecadastro","root","Di@blo13",{
+    host:"localhost",
+    dialect:"mysql"
+})
+
+
 const express = require("express");
 const app = express();
 
