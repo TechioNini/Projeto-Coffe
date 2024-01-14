@@ -19,6 +19,27 @@ app.get("/cad", function(req, res){
     res.render("layouts/formulario");
 });
 
+app.post("/cad", function(req, res){
+    Post.create({
+        Nome: req.body.Nome,
+        Idade: req.body.Idade,
+        CPF: req.body.CPF,
+        Cep: req.body.Cep,
+        Endereço: req.body.Endereço,
+        Numero: req.body.Numero,
+        Complemento: req.body.Complemento,
+        Bairro: req.body.Bairro,
+        Cidade: req.body.Cidade,
+        Estado: req.body.Estado,
+        Telefone: req.body.Telefone,
+        Email: req.body.Email
+    }).then(function(){
+        res.send("Login criado com Sucesso!")
+    }).catch(function(erro){
+        res.send("houve um erro:" + erro)
+    })
+})
+
 app.get("/", function(req, res){
     res.send("Seja Bem vindo ao meu app");
 });
@@ -40,7 +61,7 @@ app.get("/Menu", function(req, res){
     res.send("Pagina Menu");
 });
 
-app.get("/Login", function(req, res){
+app.get("/Tela Login", function(req, res){
     res.send("Pagina Login");
 });
 
