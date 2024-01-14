@@ -1,0 +1,17 @@
+body {
+    background-color: #001832;
+}
+
+.logo1 {
+    position: fixed;
+    width: 1150px;
+    top: 350px;
+    left: 1100px;
+}
+
+.logo2 {
+    position: relative;
+    width: 1150px;
+    right: 400px;
+    bottom: 200px;
+}
