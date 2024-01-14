@@ -7,7 +7,7 @@ const Post = require("./models/Post")
 
 //config
   // Template Engine
-  app.engine("handlebars", handlebars({defaultLayout: "main"}))
+  app.engine('handlebars', handlebars.engine({defaultLayout: 'main'}))
   app.set("view engine", "handlebars")
 // Body parser
   app.use(bodyParser.urlencoded({extended: false}))
@@ -16,7 +16,7 @@ const Post = require("./models/Post")
 
 //Rotas
 app.get("/cad", function(req, res){
-    res.render(formulario)
+    res.render('formulario')
 })
 
 app.get("/", function(req, res){
