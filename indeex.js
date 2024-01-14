@@ -16,8 +16,8 @@ const Post = require("./models/Post")
 
 //Rotas
 app.get("/cad", function(req, res){
-    res.render('formulario')
-})
+    res.render("layouts/formulario");
+});
 
 app.get("/", function(req, res){
     res.send("Seja Bem vindo ao meu app");
