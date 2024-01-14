@@ -7,6 +7,7 @@ body {
     width: 1150px;
     top: 350px;
     left: 1100px;
+    opacity: 0.10;
 }
 
 .logo2 {
@@ -14,4 +15,5 @@ body {
     width: 1150px;
     right: 400px;
     bottom: 200px;
+    opacity: 0.10;
 }

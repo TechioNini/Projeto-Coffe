@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Login</title>
-    
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/modal.js" defer></script>
 </head>
 <body>
     <img src="img/logo_coffee.png" alt="logo" class="logo1">
     <img src="img/logo_coffee1.png" alt="logo" class="logo2">
 
-
+    <h1>modal</h1>
+    <button id="open-modal">Abrir</button>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2>SING UP</h2>
+            <button id="close-modal">Fechar</button>
+        </div>
+        <div class="modal-body">
+            <p>Create your account</p>
+        </div>
+    </div>
 </body>
 </html>
