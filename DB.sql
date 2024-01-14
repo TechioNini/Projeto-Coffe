@@ -4,7 +4,7 @@
 // adicionar id de usuario auto increment depois de cada registro 
 
 
-// cadastro dos usuarios
+// cadastro dos usuario
 CREATE TABLE usuario (
     Nome VARCHAR (50),
     Sexo VARCHAR(15),
