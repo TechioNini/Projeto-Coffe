@@ -7,22 +7,50 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modal.css">
     <script src="js/modal.js" defer></script>
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <img src="img/logo_coffee.png" alt="logo" class="logo1">
     <img src="img/logo_coffee1.png" alt="logo" class="logo2">
 
-    <h1>modal</h1>
-    <button id="open-modal">Abrir</button>
-    <div id="fade" class="hide"></div>
-    <div id="modal" class="hide">
-        <div class="modal-header">
-            <h2>SING UP</h2>
-            <button id="close-modal">Fechar</button>
+    <div class="container">
+        <div class="buttonsFor">
+            <div class="btnColor"></div>
+            <button id="btnSignin">Sign In</button>
+            <button id="btnSignup">Sign Up</button>
         </div>
-        <div class="modal-body">
-            <p>Create your account</p>
-        </div>
+
+        <form action="" id="signin">
+            <input type="text" placeholder="Email" required />
+            <i class="fas fa-envelope iEmail"></i>
+            <input type="password" placeholder="password" required />
+            <i class="fas fa-lock iPassword"></i>
+            <div class="divCheck">
+                <input type="checkbox">
+                <span>Remember Password</span>
+            </div>
+            <button type="submit">Sign in</button>
+        </form>
     </div>
+
+        <form action="" id="signin">
+            <input type="text" placeholder="Email" required />
+            <i class="fas fa-envelope iEmail"></i>
+            <input type="password" placeholder="password" required />
+            <i class="fas fa-lock iPassword"></i>
+            <input type="password" placeholder="password" required />
+            <i class="fas fa-lock iPassword"></i>
+            <div class="divCheck">
+                <input type="checkbox">
+                <span>Terms</span>
+            </div>
+            <button type="submit">Sign in</button>
+        </form>
+    </div>
+
+
+    <script src="indeex.js"></script>
+
+
 </body>
 </html>
