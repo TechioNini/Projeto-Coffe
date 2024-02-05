@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela login</title>
+    <title>Login</title>
     <link rel="stylesheet" href="css/modal.css">
     <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
 </head>
@@ -14,15 +14,22 @@
     <div class="container">
         <div class="buttonsForm">
             <div class="btnColor"></div>
-            <button id="btnSignin">Sign in</button>
-            <button id="btnSignup">Sign up</button>
+            <button id="btnSignup">Sign Up</button>
+            <button id="btnAdressRegistration">Adress Registration</button>
+            <button id="btnCardRegistration">Card Registration</button>
         </div>
 
-        <form id="signin">
-            <input type="text" placeholder="Email" required />
-            <i class="fas fa-envelope iEmail"></i>
-            <input type="password" placeholder="Password" required />
-            <i class="fas fa-lock iPassword"></i>
+        <form id="signup">
+            <label for="nome">User Name</label>
+            <input type="text" placeholder="Enter your full name" required />
+            <label for="nome">Your CPF</label>
+            <input type="text" placeholder="Your CPF" required />
+            <label for="nome">E-mail or Number</label>
+            <input type="text" placeholder="xxxxxxxx@gmail.com or (xx) xxxxx-xxxx" required />
+            <label for="nome">Password</label>
+            <input type="password" placeholder="password" required />
+            <label for="nome">Confirm Password</label>
+            <input type="password" placeholder="password" required />
             <div class="divCheck">
                 <input type="checkbox" />
                 <span>Remember Password</span>
@@ -30,7 +37,21 @@
             <button type="submit">Sign in</button>
         </form>
 
-        <form id="signup">
+        <form id="btnAdressRegistration">
+            <input type="text" placeholder="Email" required />
+            <i class="fas fa-envelope iEmail"></i>
+            <input type="password" placeholder="Password" required />
+            <i class="fas fa-lock iPassword"></i>
+            <input type="password" placeholder="Password" required />
+            <i class="fas fa-lock iPassword2"></i>
+            <div class="divCheck">
+                <input type="checkbox" required />
+                <span>Terms</span>
+            </div>
+            <button type="submit">Sign up</button>
+        </form>
+
+        <form id="btnCardRegistration">
             <input type="text" placeholder="Email" required />
             <i class="fas fa-envelope iEmail"></i>
             <input type="password" placeholder="Password" required />
@@ -45,7 +66,7 @@
         </form>
     </div>
 
-    <script src="modal.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
